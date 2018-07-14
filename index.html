@@ -1,126 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
-        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
-        <link type="text/css" rel="stylesheet" href="style.css">
-        <title>Budgety</title>
-    </head>
-    <body>
-        
-        <div class="top">
-            <div class="budget">
-                <div class="budget__title"></br>
-                  </br> I can do all things through Christ who strengthens me. - Philippians 4:13</br><span class="budget__title--month">%Month%</span>
-                </div>
-                
-                <div class="budget__value">Hi, I am Davis,nice meeting you!</div>
-                
-                <div class="budget__income clearfix">
-                    <div class="budget__income--text">Income</div>
-                    <div class="right">
-                        <div class="budget__income--value">+ 4,300.00</div>
-                        <div class="budget__income--percentage">&nbsp;</div>
-                    </div>
-                </div>
-                
-                <div class="budget__expenses clearfix">
-                    <div class="budget__expenses--text">Expenses</div>
-                    <div class="right clearfix">
-                        <div class="budget__expenses--value">- 1,954.36</div>
-                        <div class="budget__expenses--percentage">45%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-        <div class="bottom">
-            <div class="add">
-                <div class="add__container">
-                    <select class="add__type">
-                        <option value="inc" selected>+</option>
-                        <option value="exp">-</option>
-                    </select>
-                    <input type="text" class="add__description" placeholder="Add description">
-                    <input type="number" class="add__value" placeholder="Value">
-                    <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
-                </div>
-            </div>
-            
-            <div class="container clearfix">
-                <div class="income">
-                    <h2 class="icome__title">Income</h2>
-                    
-                    <div class="income__list">
-                       
-                        <!--
-                        <div class="item clearfix" id="income-0">
-                            <div class="item__description">Salary</div>
-                            <div class="right clearfix">
-                                <div class="item__value">+ 2,100.00</div>
-                                <div class="item__delete">
-                                    <button class="item__delete--btn">
-                                        <i class="ion-ios-close-outline"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="item clearfix" id="income-1">
-                            <div class="item__description">Sold car</div>
-                            <div class="right clearfix">
-                                <div class="item__value">+ 1,500.00</div>
-                                <div class="item__delete">
-                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        -->
-                        
-                    </div>
-                </div>
-                
-                
-                
-                <div class="expenses">
-                    <h2 class="expenses__title">Expenses</h2>
-                    
-                    <div class="expenses__list">
-                       
-                        <!--
-                        <div class="item clearfix" id="expense-0">
-                            <div class="item__description">Apartment rent</div>
-                            <div class="right clearfix">
-                                <div class="item__value">- 900.00</div>
-                                <div class="item__percentage">21%</div>
-                                <div class="item__delete">
-                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
-                                </div>
-                            </div>
-                        </div>
+<HTML DOCTYPE!=HTML5>
+<head> 
+    
+    <meta charset="utf-8" />
+ 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    <!--A simple application to display venues near valletta based on category selected by the user-->
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="./assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
 
-                        <div class="item clearfix" id="expense-1">
-                            <div class="item__description">Grocery shopping</div>
-                            <div class="right clearfix">
-                                <div class="item__value">- 435.28</div>
-                                <div class="item__percentage">10%</div>
-                                <div class="item__delete">
-                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        -->
-                        
-                    </div>
+
+    
+    <!--Browserify minified javascript file source-->
+    <script type="text/javascript" src="bundle.js"></script>
+ 
+</head>
+    
+<body>
+    
+    
+<div class="wrapper">   
+ 
+
+  <div class="sidebar" data-color="azure" data-background-color="white">
+    
+      
+   <div class="logo"><a href="#" class="simple-text-logo">
+       <h1 class="hit-the-floor">Explore Valletta 2018!</h1> 
+    </a>
+      </div><!--end of logo -->
+      
+      
+    <div class ="sidebar-wrapper ps-container ps-theme-default ps-active-y">
+      
+          <ul class="categories nav"> </ul>
+      
+      </div>
+    
+      
+      <!-- sidebar background image-->
+     <div class="sidebar-background" style="background-image: url(https://thumbs.dreamstime.com/z/colored-sketch-valetta-malta-hand-drawn-vector-illustration-modern-headline-use-greeting-card-travel-marketing-108323778.jpg) "></div>
+    
+    </div><!--end of sidebar-->
+    
+    
+    
+ <div class="main-panel ps-container ps-theme-default ps-active-y" data-ps-id="2e06b57a-baf0-09f3-27c3-9fc917a32648"> 
+    
+    
+ <div class="content"  >
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">This application is powered by <a href="https://developer.foursquare.com/">foursquare</a> </h4>
+                  <p class="card-category"> Kindly select a category to find the location of all the venues you are looking for in Valletta in just a single click.</p>
                 </div>
+                <div class="card-body">
+                  <div class="table-responsive" >
+                    <table class="table" >
+                      <thead class=" text-primary">
+
+                        <th>
+                          Name of venue
+                        </th>
+                        <th>
+                          Address
+                        </th>
+                        <th>
+                          Street Name
+                        </th>
+                        <th>
+                          Distance Away(meters)
+                        </th>
+                      </thead>
+                      <tbody id="venuesDisplay">
+                        
+                        
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
-            
-            
+              
+       
+          </div>
         </div>
-        
-        <script src="app.js"></script>
-    </body>
-</html>
+      </div>
+    
+ </div>     
+    
+    
+    
+    
+    </div>
+   
+
+     </body>
+   
+<footer>
+
+</footer>
+
+
+   
+
+
