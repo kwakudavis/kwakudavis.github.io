@@ -1,0 +1,116 @@
+<HTML DOCTYPE!=HTML5>
+<head> 
+    
+    <meta charset="utf-8" />
+ 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    <!--A simple application to display venues near valletta based on category selected by the user-->
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="./assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+
+
+    
+    <!--Browserify minified javascript file source-->
+    <script type="text/javascript" src="bundle.js"></script>
+ 
+</head>
+    
+<body>
+    
+    
+<div class="wrapper">
+
+
+  <div class="sidebar" data-color="azure" data-background-color="white">
+
+
+   <div class="logo"><a href="#" class="simple-text-logo">
+       <h1 class="hit-the-floor">Explore Valletta 2018!</h1>
+    </a>
+      </div><!--end of logo -->
+
+
+    <div class ="sidebar-wrapper ps-container ps-theme-default ps-active-y">
+
+          <ul class="categories nav"> </ul>
+
+      </div>
+
+
+      <!-- sidebar background image-->
+     <div class="sidebar-background" style="background-image: url(https://thumbs.dreamstime.com/z/colored-sketch-valetta-malta-hand-drawn-vector-illustration-modern-headline-use-greeting-card-travel-marketing-108323778.jpg) "></div>
+
+    </div><!--end of sidebar-->
+
+
+
+ <div class="main-panel ps-container ps-theme-default ps-active-y" data-ps-id="2e06b57a-baf0-09f3-27c3-9fc917a32648">
+
+
+ <div class="content"  >
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">This application is powered by <a href="https://developer.foursquare.com/">foursquare</a> </h4>
+                  <p class="card-category"> Kindly select a category to find the location of all the venues you are looking for in Valletta in just a single click.</p>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive" >
+                    <table class="table" >
+                      <thead class=" text-primary">
+
+                        <th>
+                          Name of venue
+                        </th>
+                        <th>
+                          Address
+                        </th>
+                        <th>
+                          Street Name
+                        </th>
+                        <th>
+                          Distance Away(meters)
+                        </th>
+                      </thead>
+                      <tbody id="venuesDisplay">
+
+
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+ </div>
+
+
+
+    
+    </div>
+   
+
+     </body>
+   
+<footer>
+
+</footer>
+
+
+   
+
+
