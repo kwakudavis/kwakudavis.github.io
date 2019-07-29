@@ -29,13 +29,35 @@
      
      <form action="#" method ="GET">
           Total number of students:<br>
-         <input type="number" name="no_of_students">  <!--Total number of students-->
+         <input type="number" name="no_of_students">  <!--Total number of students--><br>
           number of kinder(below age 10):<br>
-         <input type="number" name="no_of_kinder">   <!--Total number of Kinder students students-->
+         <input type="number" name="no_of_kinder">   <!--Total number of Kinder students students--><br>
           number of LSA kids (1:1):<br>
          <input type="number" name="no_of_lsa">
-
+         <br>
+         <button type="button" onclick="calculateStaff()">Calculate Staff</button>
+         
      </form>
+     
+<script>
+function calculateStaff() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
+</script>
+     
+     
+     
+     
+     
+     
      
      
    </div>  
