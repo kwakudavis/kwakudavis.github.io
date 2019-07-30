@@ -42,19 +42,37 @@
      </br>
      <p3 >Lsa Staff:</p3> <p4 id="Lsa_staff"></p4>
      </br>
-     <p5>Above Kinder staff:</p5 id="above_kinder_staff"><p6></p6>
+     <p5>Above Kinder staff:</p5><p6  id="above_kinder_staff"></p6>
      </br>  
      <p6>Total staff needed:</p6><p7 id="total_staff"></p7>
 
 
 <script>
 function calculateStaff() {
+
+/*Getting values of students*/
+  
+  var total_students = document.getElementById("no_of_students").innerHTML;
+  var kinder = document.getElementById("no_of_kinder").innerHTML;
+  var lsa = document.getElementById("no_of_lsa").innerHTML;
+  var notKinder = total_students - lsa - kinder;
+  
+  
+  
+ /*Calculating values*/  
+
+  
+  
  
-  document.getElementById("kinder_staff").innerHTML = 16;
-  document.getElementById("Lsa_staff").innerHTML = 16;
-  document.getElementById("above_kinder_staff").innerHTML = 16; 
-  document.getElementById("total_staff").innerHTML = 16;
- 
+  
+  
+  /*Displaying results*/
+  document.getElementById("kinder_staff").innerHTML = total_students;
+  document.getElementById("Lsa_staff").innerHTML = kinder;
+  document.getElementById("above_kinder_staff").innerHTML = lsa; 
+  document.getElementById("total_staff").innerHTML = notKinder;
+
+  
 }
 </script>
      
