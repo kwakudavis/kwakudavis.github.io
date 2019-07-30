@@ -61,10 +61,15 @@ function calculateStaff() {
   
  /*Calculating values*/  
 
-   var kinder_staff = Math.ceil((kinder/15));
-   var above_kinder_staff =  Math.ceil((notKinder/20));
+   var kinder_staff = Math.floor((kinder/15));
+   var above_kinder_staff =  Math.floor((notKinder/20));
    var lsa_staff = lsa;
-   var total_staff = parseInt(kinder_staff) + parseInt(above_kinder_staff) + parseInt(lsa_staff);
+  
+   if ( kinder%15 != 0 || notKinder%20 !=0 ){
+       extra = 1
+                   }
+  
+   var total_staff = parseInt(kinder_staff) + parseInt(above_kinder_staff) + parseInt(lsa_staff) + extra;
   
  
   
