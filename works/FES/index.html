@@ -68,6 +68,11 @@ function calculateStaff() {
    if ( kinder%15 != 0 || notKinder%20 !=0 ){
        extra = 1
                    }
+    else {
+      
+       extra = 0
+     
+    }
   
    var total_staff = parseInt(kinder_staff) + parseInt(above_kinder_staff) + parseInt(lsa_staff) + extra;
   
